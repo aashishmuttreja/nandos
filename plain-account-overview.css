@@ -1,0 +1,554 @@
+@font-face {
+	font-family: 'rlegoheavy';
+	src: url("https://d3tdkvfstzj7gy.cloudfront.net/images/lego/fonts/rlego-heavy-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal
+}
+
+@font-face {
+	font-family: 'cera_pro';
+	src: url("https://d3tdkvfstzj7gy.cloudfront.net/images/lego/fonts/cerapro-regular-webfont.woff") format("woff");
+	font-weight: 400;
+	font-style: normal
+}
+
+@font-face {
+	font-family: 'cera_pro';
+	src: url("https://d3tdkvfstzj7gy.cloudfront.net/images/lego/fonts/cerapro-medium-webfont.woff") format("woff");
+	font-weight: 600;
+	font-style: normal
+}
+
+@font-face {
+	font-family: 'cera_pro';
+	src: url("https://d3tdkvfstzj7gy.cloudfront.net/images/lego/fonts/cerapro-bold-webfont.woff") format("woff");
+	font-weight: 700;
+	font-style: normal
+}
+
+html,
+body {
+	-webkit-font-smoothing: subpixel-antialiased;
+	-webkit-text-size-adjust: 100%;
+	box-sizing: border-box;
+	font-feature-settings: 'pnum' 1, 'kern' 1, 'liga' 1;
+	font-size: 16px
+}
+
+*,
+*::after,
+*::after {
+	box-sizing: inherit;
+	font-family: "cera_pro", "Cera Pro", BlinkMacSystemFont, system-ui, -apple-system, "Helvetica Neue", sans-serif
+}
+
+div[ui-view] {
+	position: relative
+}
+
+hr {
+	border: 0;
+	border-top: 1px solid currentColor;
+	height: 0
+}
+
+.header.ct-header-color {
+	background-color: #fff !important
+}
+
+.header.ct-header-color .ct-header-text-color {
+	color: #000 !important
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: inherit
+}
+
+p,
+span {
+	font-size: 1em
+}
+
+.ct-points-color {
+	color: #00172F !important;
+	text-transform: none !important
+}
+
+.ct-link-color {
+	color: #00172F !important;
+	text-decoration: none !important
+}
+
+.ct-link-color:hover,
+.ct-link-color:focus {
+	color: #31a1e0 !important
+}
+
+.ct-link-color:active {
+	color: #263757 !important
+}
+
+a {
+	transition: all .15s
+}
+
+a:active {
+	transition: none
+}
+
+a[disabled] {
+	pointer-events: none
+}
+
+a:focus {
+	outline: thin dotted;
+	outline-color: initial;
+	outline-style: dotted;
+	outline-width: thin;
+	outline-offset: -1px
+}
+
+a.btn,
+button,
+.btn,
+.btn.btn-danger,
+a.btn.btn-danger,
+.btn.btn-secondary,
+a.btn.btn-secondary,
+#social-connect-widget button.connect,
+#survey .nav-btns .prev-btn,
+button.btn,
+.btn.btn-small,
+a.btn.btn-small,
+#survey .nav-btns .prev-btn,
+#upload-receipt .receipt-preview label,
+#account-settings .primary-settings .edit {
+	background-color: #fff;
+	border: 0;
+	border-radius: 3px;
+	color: #00172F;
+	cursor: pointer;
+	font-family: inherit;
+	font-size: 1rem;
+	font-weight: 700;
+	height: auto;
+	margin: 0;
+	padding: .75rem 1.5625rem;
+	text-transform: none;
+	transition: all .15s;
+	user-select: none;
+	width: auto
+}
+
+a.btn[disabled],
+button[disabled],
+.btn[disabled],
+.btn.btn-danger[disabled],
+a.btn.btn-danger[disabled],
+.btn.btn-secondary[disabled],
+a.btn.btn-secondary[disabled],
+#social-connect-widget button.connect[disabled],
+#survey .nav-btns .prev-btn[disabled],
+button.btn[disabled],
+.btn.btn-small[disabled],
+a.btn.btn-small[disabled],
+#survey .nav-btns .prev-btn[disabled],
+#upload-receipt .receipt-preview label[disabled],
+#account-settings .primary-settings .edit[disabled] {
+	pointer-events: none
+}
+
+a.btn:hover,
+a.btn:focus,
+button:hover,
+button:focus,
+.btn:hover,
+.btn:focus,
+.btn.btn-danger:hover,
+.btn.btn-danger:focus,
+a.btn.btn-danger:hover,
+a.btn.btn-danger:focus,
+.btn.btn-secondary:hover,
+.btn.btn-secondary:focus,
+a.btn.btn-secondary:hover,
+a.btn.btn-secondary:focus,
+#social-connect-widget button.connect:hover,
+#social-connect-widget button.connect:focus,
+#survey .nav-btns .prev-btn:hover,
+#survey .nav-btns .prev-btn:focus,
+button.btn:hover,
+button.btn:focus,
+.btn.btn-small:hover,
+.btn.btn-small:focus,
+a.btn.btn-small:hover,
+a.btn.btn-small:focus,
+#survey .nav-btns .prev-btn:hover,
+#survey .nav-btns .prev-btn:focus,
+#upload-receipt .receipt-preview label:hover,
+#upload-receipt .receipt-preview label:focus,
+#account-settings .primary-settings .edit:hover,
+#account-settings .primary-settings .edit:focus {
+	background-color: #fff;
+	color: #31a1e0
+}
+
+a.btn:focus,
+button:focus,
+.btn:focus,
+.btn.btn-danger:focus,
+a.btn.btn-danger:focus,
+.btn.btn-secondary:focus,
+a.btn.btn-secondary:focus,
+#social-connect-widget button.connect:focus,
+#survey .nav-btns .prev-btn:focus,
+button.btn:focus,
+.btn.btn-small:focus,
+a.btn.btn-small:focus,
+#survey .nav-btns .prev-btn:focus,
+#upload-receipt .receipt-preview label:focus,
+#account-settings .primary-settings .edit:focus {
+	outline: thin dotted;
+	outline-color: initial;
+	outline-style: dotted;
+	outline-width: thin;
+	outline-offset: -1px
+}
+
+a.btn:active,
+button:active,
+.btn:active,
+.btn.btn-danger:active,
+a.btn.btn-danger:active,
+.btn.btn-secondary:active,
+a.btn.btn-secondary:active,
+#social-connect-widget button.connect:active,
+#survey .nav-btns .prev-btn:active,
+button.btn:active,
+.btn.btn-small:active,
+a.btn.btn-small:active,
+#survey .nav-btns .prev-btn:active,
+#upload-receipt .receipt-preview label:active,
+#account-settings .primary-settings .edit:active {
+	background-color: #fff;
+	color: #263757;
+	transition: none
+}
+
+.ct-button,
+#activity-history .btn.show-more,
+#survey .nav-btns .next-btn {
+	background-color: #00172F !important;
+	color: #fff !important;
+	font-size: 1rem;
+	font-weight: 500
+}
+
+.ct-button:hover,
+.ct-button:focus,
+#activity-history .btn.show-more:hover,
+#activity-history .btn.show-more:focus,
+#survey .nav-btns .next-btn:hover,
+#survey .nav-btns .next-btn:focus {
+	background-color: #263757 !important;
+	color: #fff !important
+}
+
+.ct-button:active,
+#activity-history .btn.show-more:active,
+#survey .nav-btns .next-btn:active {
+	background-color: #263757 !important;
+	color: #f8f8f8 !important
+}
+
+.notification {
+	flex: 1 1 100%
+}
+
+.notification.error,
+.notification.notification-error {
+	background-color: #fff2f2;
+	border: 1px solid #ce2f09;
+	color: #000
+}
+
+.notification.notification-warning,
+.notification.warning {
+	background-color: #fef6d2;
+	border: 1px solid #ffcf00;
+	color: #000
+}
+
+.notification.notification-success,
+.notification.success {
+	background-color: #ccead8;
+	border: 1px solid #149542;
+	color: #000
+}
+
+.notification .fa,
+.notification .status {
+	display: none
+}
+
+#activity-history table,
+#reward-history table,
+.purchase-history-table {
+	font-feature-settings: 'pnum' 0, 'kern' 1, 'liga' 1
+}
+
+#activity-history table tr[ng-show='rewards.length == 0'] td,
+#activity-history table tr[ng-show='orders.length == 0'] td span,
+#activity-history table span[ng-if='activity.points() < 0'],
+#reward-history table tr[ng-show='rewards.length == 0'] td,
+#reward-history table tr[ng-show='orders.length == 0'] td span,
+#reward-history table span[ng-if='activity.points() < 0'],
+.purchase-history-table tr[ng-show='rewards.length == 0'] td,
+.purchase-history-table tr[ng-show='orders.length == 0'] td span,
+.purchase-history-table span[ng-if='activity.points() < 0'] {
+	color: #999 !important
+}
+
+#activity-history table tbody:before,
+#reward-history table tbody:before,
+.purchase-history-table tbody:before {
+	content: ''
+}
+
+#activity-history table td,
+#activity-history table th,
+#reward-history table td,
+#reward-history table th,
+.purchase-history-table td,
+.purchase-history-table th {
+	line-height: 1.25rem;
+	padding: .25rem 1rem
+}
+
+#activity-history table td:nth-last-child(1),
+#activity-history table th:nth-last-child(1),
+#reward-history table td:nth-last-child(1),
+#reward-history table th:nth-last-child(1),
+.purchase-history-table td:nth-last-child(1),
+.purchase-history-table th:nth-last-child(1) {
+	padding-right: 0
+}
+
+input[type=email],
+input[type=number],
+input[type=password],
+input[type=tel],
+input[type=text],
+.account-settings .input-group input,
+#check-in .search-wrapper input.venue-search,
+dl.form dd input[type=email],
+dl.form dd input[type=number],
+dl.form dd input[type=password],
+dl.form dd input[type=tel],
+dl.form dd input[type=text],
+#redeem-v2 #review fieldset.form input[type=date],
+#redeem-v2 #review fieldset.form input[type=email],
+#redeem-v2 #review fieldset.form input[type=number],
+#redeem-v2 #review fieldset.form input[type=password],
+#redeem-v2 #review fieldset.form input[type=phone],
+#redeem-v2 #review fieldset.form input[type=tel],
+#redeem-v2 #review fieldset.form input[type=text],
+#redeem-v2 #review fieldset.form input[type=url],
+select,
+dl.form dd select,
+.account-settings .input-group select,
+#redeem #review dl.form.select dd select,
+#redeem-v2 #review fieldset.form select {
+	-webkit-appearance: none;
+	background-color: #fafafa;
+	border: 1px solid #c3c3c3;
+	border-radius: 0px;
+	font-size: 16px;
+	height: 32px;
+	line-height: 30px;
+	margin: 0;
+	transition: all .15s
+}
+
+input[type=email]:focus,
+input[type=email]:active,
+input[type=number]:focus,
+input[type=number]:active,
+input[type=password]:focus,
+input[type=password]:active,
+input[type=tel]:focus,
+input[type=tel]:active,
+input[type=text]:focus,
+input[type=text]:active,
+.account-settings .input-group input:focus,
+.account-settings .input-group input:active,
+#check-in .search-wrapper input.venue-search:focus,
+#check-in .search-wrapper input.venue-search:active,
+dl.form dd input[type=email]:focus,
+dl.form dd input[type=email]:active,
+dl.form dd input[type=number]:focus,
+dl.form dd input[type=number]:active,
+dl.form dd input[type=password]:focus,
+dl.form dd input[type=password]:active,
+dl.form dd input[type=tel]:focus,
+dl.form dd input[type=tel]:active,
+dl.form dd input[type=text]:focus,
+dl.form dd input[type=text]:active,
+#redeem-v2 #review fieldset.form input[type=date]:focus,
+#redeem-v2 #review fieldset.form input[type=date]:active,
+#redeem-v2 #review fieldset.form input[type=email]:focus,
+#redeem-v2 #review fieldset.form input[type=email]:active,
+#redeem-v2 #review fieldset.form input[type=number]:focus,
+#redeem-v2 #review fieldset.form input[type=number]:active,
+#redeem-v2 #review fieldset.form input[type=password]:focus,
+#redeem-v2 #review fieldset.form input[type=password]:active,
+#redeem-v2 #review fieldset.form input[type=phone]:focus,
+#redeem-v2 #review fieldset.form input[type=phone]:active,
+#redeem-v2 #review fieldset.form input[type=tel]:focus,
+#redeem-v2 #review fieldset.form input[type=tel]:active,
+#redeem-v2 #review fieldset.form input[type=text]:focus,
+#redeem-v2 #review fieldset.form input[type=text]:active,
+#redeem-v2 #review fieldset.form input[type=url]:focus,
+#redeem-v2 #review fieldset.form input[type=url]:active,
+select:focus,
+select:active,
+dl.form dd select:focus,
+dl.form dd select:active,
+.account-settings .input-group select:focus,
+.account-settings .input-group select:active,
+#redeem #review dl.form.select dd select:focus,
+#redeem #review dl.form.select dd select:active,
+#redeem-v2 #review fieldset.form select:focus,
+#redeem-v2 #review fieldset.form select:active {
+	background-color: #fff;
+	border: 1px solid #4c2a67;
+	transition: none
+}
+
+input[type=email]:focus,
+input[type=number]:focus,
+input[type=password]:focus,
+input[type=tel]:focus,
+input[type=text]:focus,
+.account-settings .input-group input:focus,
+#check-in .search-wrapper input.venue-search:focus,
+dl.form dd input[type=email]:focus,
+dl.form dd input[type=number]:focus,
+dl.form dd input[type=password]:focus,
+dl.form dd input[type=tel]:focus,
+dl.form dd input[type=text]:focus,
+#redeem-v2 #review fieldset.form input[type=date]:focus,
+#redeem-v2 #review fieldset.form input[type=email]:focus,
+#redeem-v2 #review fieldset.form input[type=number]:focus,
+#redeem-v2 #review fieldset.form input[type=password]:focus,
+#redeem-v2 #review fieldset.form input[type=phone]:focus,
+#redeem-v2 #review fieldset.form input[type=tel]:focus,
+#redeem-v2 #review fieldset.form input[type=text]:focus,
+#redeem-v2 #review fieldset.form input[type=url]:focus,
+select:focus,
+dl.form dd select:focus,
+.account-settings .input-group select:focus,
+#redeem #review dl.form.select dd select:focus,
+#redeem-v2 #review fieldset.form select:focus {
+	outline: thin dotted;
+	outline-color: initial;
+	outline-style: dotted;
+	outline-width: thin;
+	outline-offset: -1px
+}
+
+input[type=email],
+input[type=number],
+input[type=password],
+input[type=tel],
+input[type=text],
+.account-settings .input-group input,
+#check-in .search-wrapper input.venue-search,
+dl.form dd input[type=email],
+dl.form dd input[type=number],
+dl.form dd input[type=password],
+dl.form dd input[type=tel],
+dl.form dd input[type=text],
+#redeem-v2 #review fieldset.form input[type=date],
+#redeem-v2 #review fieldset.form input[type=email],
+#redeem-v2 #review fieldset.form input[type=number],
+#redeem-v2 #review fieldset.form input[type=password],
+#redeem-v2 #review fieldset.form input[type=phone],
+#redeem-v2 #review fieldset.form input[type=tel],
+#redeem-v2 #review fieldset.form input[type=text],
+#redeem-v2 #review fieldset.form input[type=url] {
+	color: #000;
+	padding: .375rem
+}
+
+select,
+dl.form dd select,
+.account-settings .input-group select,
+#redeem #review dl.form.select dd select,
+#redeem-v2 #review fieldset.form select ui-view {
+	display: block
+}
+
+.widget .container {
+	padding: 3.125rem 0rem 0rem
+}
+
+@keyframes spin-step {
+	0% {
+		transform: rotate(0deg)
+	}
+
+	100% {
+		transform: rotate(360deg)
+	}
+}
+
+html,
+body {
+	-ms-overflow-style: none;
+	background: rgba(255, 255, 255, 0);
+	overflow: hidden;
+	overflow-x: hidden
+}
+
+.widget .header {
+	display: none
+}
+
+.widget .container::-webkit-scrollbar {
+	display: none
+}
+
+#account-overview-v2 .ct-progress-bar {
+	background-color: rgba(15, 111, 180, 0.3) !important
+}
+
+#account-overview-v2 .ct-progress-bar .bar {
+	background-color: #00172F !important
+}
+
+#account-overview-v2 .fan-level-progress {
+	font-size: 0;
+	text-indent: -9999px
+}
+
+#account-overview-v2 .points-info .fan-level .icon {
+	display: none;
+}
+
+#account-overview-v2 .points-info .fan-level {
+	display: none;
+}
+
+#account-overview-v2 .profile-pic.bp2 {
+	display: none;
+
+}
+
+#account-overview-v2 .fan-level.small {
+	display: none;
+}
