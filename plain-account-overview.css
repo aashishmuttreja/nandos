@@ -75,12 +75,12 @@ span {
 }
 
 .ct-points-color {
-	color: #00172F !important;
+	color: #3cd4b5 !important;
 	text-transform: none !important
 }
 
 .ct-link-color {
-	color: #00172F !important;
+	color: #3cd4b5 !important;
 	text-decoration: none !important
 }
 
@@ -131,7 +131,7 @@ a.btn.btn-small,
 	background-color: #fff;
 	border: 0;
 	border-radius: 3px;
-	color: #00172F;
+	color: #3cd4b5;
 	cursor: pointer;
 	font-family: inherit;
 	font-size: 1rem;
@@ -242,7 +242,7 @@ a.btn.btn-small:active,
 .ct-button,
 #activity-history .btn.show-more,
 #survey .nav-btns .next-btn {
-	background-color: #00172F !important;
+	background-color: #3cd4b5 !important;
 	color: #fff !important;
 	font-size: 1rem;
 	font-weight: 500
@@ -528,7 +528,7 @@ body {
 }
 
 #account-overview-v2 .ct-progress-bar .bar {
-	background-color: #00172F !important
+	background-color: #3cd4b5 !important
 }
 
 #account-overview-v2 .fan-level-progress {
